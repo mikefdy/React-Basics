@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Hello from './Hello.js';    //import App from './App.js'  importing component
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hello />        
+    <Hello greeting={' Hello React Ninja'}/>        
   </React.StrictMode>
 );   //Was changed to <Hello /> before was <App />  displaying own component
 
