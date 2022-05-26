@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Hello from './Hello.js';    //import App from './App.js'  importing component
+import Card from './Card.js';
+import CardList from './CardList.js';
 import reportWebVitals from './reportWebVitals';
-import 'tachyons';
+import 'tachyons'; //styling and animation framework for js and react comonents
+import {robots} from './Robots.js'; //import Robot objects 
+import App from './App.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hello greeting={' Hello React Ninja'}/>        
+    <App/>
+     
   </React.StrictMode>
-);   //Was changed to <Hello /> before was <App />  displaying own component
+);  
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
